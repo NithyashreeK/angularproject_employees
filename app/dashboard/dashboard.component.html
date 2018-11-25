@@ -1,0 +1,21 @@
+<h3>Welcome to the salary page of NSK company</h3>
+<div>
+	In addition to being one of the most vibrant, fast-moving company in Orlando, we offer competitive salary with excellent employment benefits. Here's a list of all the benefits that we provide:
+	<ul>
+		<li>Health Insurance</li>
+		<li>Disability Insurance</li>
+		<li>Life Insurance</li>
+		<li>Accidental Death & Dismemberment (AD&D) Insurance</li>
+		<li>401(k)/Registered Retirement Savings Plan (RRSP)</li>
+	</ul>
+	The Employees tab lists the current employees at NSK. Details of each employee regarding base-salary, deductions based on the benefits offered and take-home salary are available.<br>
+	Take a look at an employee's details by clicking on the button below.
+</div>
+<div class="grid-pad">
+	<a *ngFor="let employee of employees" class="col-1-4" routerLink="/detail/{{employee.id}}">
+		<div class="module employee">
+			<h4>{{employee.name}}</h4>
+		</div>
+	</a>
+</div>
+

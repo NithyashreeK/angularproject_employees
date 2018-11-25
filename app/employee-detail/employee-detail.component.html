@@ -1,0 +1,45 @@
+<div *ngIf="employee">
+	<h2>{{employee.name | uppercase}}'s Details</h2>
+	<div><label>Employee ID: </label> {{employee.id}}</div>
+	<div>
+		<label>Employee Name: </label>
+			<input [(ngModel)]="employee.name" placeholder="name">
+		
+	</div>
+
+	<div>
+		<label>Base salary [USD]: </label>
+			<input [(ngModel)]="employee.salary" placeholder="salary">
+		
+	</div>
+	<div>
+		<label>Health Insurance [USD]: </label>
+			<input [(ngModel)]="employee.health" placeholder="health">
+		
+	</div>
+	<div>
+		<label>Disability Insurance [USD]: </label>
+			<input [(ngModel)]="employee.disability" placeholder="disability">
+		
+	</div>
+	<div>
+		<label>Life Insurance [USD]: </label>
+			<input [(ngModel)]="employee.life" placeholder="life">
+		
+	</div>
+	<div>
+		<label>AD&D Insurance [USD]: </label>
+			<input [(ngModel)]="employee.accident" placeholder="accident">
+		
+	</div>
+	<div>
+		<label>401(k)/RRSP [USD]:</label>
+			<input [(ngModel)]="employee.retirement" placeholder="retirement">
+		
+	</div>
+	<div><label>Total salary: </label> {{(employee.salary-employee.health-employee.disability-employee.life-employee.accident-employee.retirement)|currency}}</div>
+	<button (click)="goBack()">go back</button>
+	<button (click)="save()">save</button>
+</div>
+
+

@@ -1,0 +1,29 @@
+h2 {
+  color: green;
+  font-weight: lighter;
+}
+div {
+  clear:both;
+}
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: crimson;
+}
+button.clear {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button.clear {
+  color: #888;
+  margin-bottom: 12px;
+}

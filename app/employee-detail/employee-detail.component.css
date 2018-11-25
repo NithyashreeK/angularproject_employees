@@ -1,0 +1,25 @@
+label {
+  width: 200px;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+  display: inline-block;
+  text-align: right;
+}
+input {
+  margin: 10px 5px;
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+button {
+  margin: 20px 10px;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
